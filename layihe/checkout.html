@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="photo/Logo.png" alt="Logo">
+                </div>
+                
+                <button class="icon" id="mainDropdownButton">
+                    <img src="photo/Icon.png" alt="Menu Icon" id="mainButtonIcon">
+                </button>
+                <div class="dropdown-content" id="mainDropdownMenu">
+                    <div class="dropdown_words">
+                        <a href="#">Home</a>
+                        <div class="category-container">
+                            <a href="#" class="categories-link">Categories</a>
+                            <img src="photo/sag.png" alt="Dropdown Icon" id="categoriesIcon" class="dropdown-icon">
+                        </div>
+                        <div class="subcategory-dropdown" id="subcategoryDropdownMenu">
+                            <a href="#">On Sale</a>
+                            <a href="#">Featured</a>
+                            <a href="#">Masks</a>
+                            <a href="#">Eye Care</a>
+                            <a href="#">Moisturizers</a>
+                            <a href="#">Treatments</a>
+                            <a href="#">Night Care</a>
+                            <a href="#">Sun Care</a>
+                        </div>
+                        <a href="#">Blog</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="icons-container">
+                        <a href="#"><img src="photo/insta.svg" alt="Icon 1"></a>
+                        <a href="#"><img src="photo/Twitter.svg" alt="Icon 2"></a>
+                        <a href="#"><img src="photo/Facebook.svg" alt="Icon 3"></a>
+                    </div>
+                </div>
+               
+                <div class="icons">
+                    <a href="#"><img src="photo/Iconnn.svg" alt=""></a>
+                    <div class="icon_shop">
+                        <a href="#"><img src="photo/Iconnnn.svg" alt=""></a>
+                        <img id="imgg" src="photo/Indicatorr.svg" alt="">
+                    </div>
+                    <a href="#"><img src="photo/Icon.svg" alt=""></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+   <div class="container">
+    <section class="section_1">
+        <div class="links">
+            <div class="link">
+                <a href="">Home Page</a>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="link">
+                <a href="">Categories</a>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="link">
+                <a href="">Shopping Cart</a>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <a href="">Checkout</a>
+        </div>
+        <div class="text_header">
+            <p>- Almost There</p>
+            <h1>Checkout</h1>
+        </div>
+    </section>
+    <section class="section2_icons">
+        <div class="section2_icon" id="step1">
+            <h4>1</h4>
+            <p></p>
+        </div>
+        <div class="section2_icon" id="step2">
+            <h4>2</h4>
+            <p></p>
+        </div>
+        <div class="section2_icon" id="step3">
+            <h4>3</h4>
+            <p></p>
+        </div>
+        <div class="h4_4" id="step4">
+            <h4>4</h4>
+           
+        </div>
+    </section>
+    
+    
+    <section class="section__3">
+     <!-- Step 1: Details -->
+<div class="step details active">
+    <h2>Details</h2>
+    <div class="form_details">
+        <form id="detailsForm">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            
+            <button type="submit" class="next-step" data-next-step="shipping_details">Continue</button>
+            <button type="button" id="guest_checkout">Guest Checkout</button>
+        </form>
+    </div>
+</div>
+
+<!-- Step 2: Shipping Details -->
+<div class="step shipping_details">
+    <h2>Shipping Details</h2>
+    <div class="form_shipping_details">
+        <form id="shippingForm">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required placeholder="Full Name">
+
+            <label for="street-name">Street Name</label>
+            <input type="text" id="street-name" name="street-name" required placeholder="123 Street Name">
+        
+            <div class="input_">
+                <div class="form_column">
+                    <label for="house-number">House Number</label>
+                    <input type="number" id="house-number" name="house-number" required placeholder="123">
+                </div>
+            
+                <div class="form_column">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required placeholder="San Francisco">
+                </div>
+            </div>
+        
+            <div class="input_">
+                <div class="form_column">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" required placeholder="USA">
+                </div>
+            
+                <div class="form_column">
+                    <label for="zip-code">ZIP Code</label>
+                    <input type="number" id="zip-code" name="zip-code" required placeholder="123 987">
+                </div>
+            </div>
+        
+            <button type="submit" class="next-step" data-next-step="billing_details">Continue</button>
+        </form>
+    </div>
+</div>
+
+<!-- Step 3: Billing Details --> 
+<div class="step billing_details">
+    <h2>Billing Details</h2>
+    <div class="form_billing_details">
+        <form id="billingForm">
+            <div class="same_as_shipping">
+                <div class="check_container">
+                    <input type="checkbox" id="same_as_shipping" class="check_button">
+                </div>
+                <label for="same_as_shipping">Same as shipping address</label>
+            </div>
+            
+            <button type="submit" class="next-step" data-next-step="payment_details">Continue</button>
+        </form>
+    </div>
+</div>
+
+<!-- Step 4: Payment Details --> 
+<div class="step payment_details">
+    <h2>Payment Details</h2>
+    <form>
+        <div class="payment-method">
+           <div class="credit_pay">
+            <div class="check_container">
+                <input type="checkbox" id="credit_card" class="check_button">
+            </div>
+            <label for="credit_card">Credit Card</label>
+           </div>
+            <div class="credit_pay">
+                <div class="check_container">
+                    <input type="checkbox" id="paypal" class="check_button">
+                </div>
+                <label for="paypal">PayPal</label>
+            </div>
+          </div>
+        
+          <div class="card-details">
+            <label for="card-number" id="card__number">Card Number</label>
+            <input type="number" id="card-number" name="card-number" placeholder="1234  9876  4321  6789" required>
+        
+            <div class="input_">
+                <div class="form_column">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                </div>
+            
+                <div class="form_column">
+                    <label for="cvv">CVV</label>
+                    <input type="number" id="cvv" name="cvv" placeholder="123" required>
+                </div>
+            </div>
+        
+            <div class="input_">
+                <div class="form_column">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" placeholder="USA" required>
+                </div>
+            
+                <div class="form_column">
+                    <label for="zip-code">Zip Code</label>
+                    <input type="number" id="zip-code" name="zip-code" placeholder="123 987" required>
+                </div>
+            </div>
+          </div>
+          <button type="submit">Place Order</button>
+    </form>
+</div>
+
+<!-- M Y   C A R T -->
+
+<div class="my_cart">
+    <h2>My Cart</h2>
+    <div class="total">
+        <h4>Total:</h4>
+        <p>$0</p>
+    </div>
+    <button>Edit Cart</button>
+</div>
+    </section>
+
+   </div>
+
+    <footer class="container">
+        <div class="container_footer">
+           <div class="footer_">
+                <div class="footer_logo">
+                  <img src="photo/Logoo.png" alt="">
+                  <p>© 2020 - All rights reserved</p>
+                </div>
+                <div class="footer_icon">
+                  <div class="f_icon"><a href="#"><img src="photo/insta.png" alt="Icon 1"></a></div>
+                  <div class="f_icon"><a href="#"><img src="photo/Twitter.png" alt="Icon 2"></a></div>
+                  <div class="f_icon"><a href="#"><img src="photo/Facebook.png" alt="Icon 3"></a></div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Categories</div>
+                <ul class="footer-menu">
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Masks</a></li>
+                    <li><a href="#">Eye Care</a></li>
+                    <li><a href="#">Moisturizers</a></li>
+                    <li><a href="#">Treatments</a></li>
+                    <li><a href="#">Night Care</a></li>
+                    <li><a href="#">Sun Care</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Legal</div>
+                <ul class="footer-menu">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Data Protection</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Company</div>
+                <ul class="footer-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Culture</a></li>
+                </ul>
+            </div>
+           </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

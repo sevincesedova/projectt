@@ -1,0 +1,134 @@
+@media (max-width: 1024px) {
+
+    .container {
+        width: 928px;
+    }
+
+    nav  {
+        width: 928px;
+    }
+
+
+
+    .section1{
+        width: 100%;
+        height: 504px;
+        border-radius: 56px;
+    }
+    .section1 .image{
+        width: 576px;
+        height: 432px;
+        
+    }
+    .section1 .text_image{
+        width: 410px;
+        margin-left: 48px;
+    }
+    .section2_2{
+        margin-top: 112px;
+    }
+    .section2_cards{
+        width: 1248px;
+        margin-top: 64px;
+    }
+    .products_card{
+        gap: 32px;
+        width: 103%;
+    }
+    .product_card{
+        width: calc((100% - 2 * 32px) / 3);
+    }
+    .product_card_text{
+        width: 272px;
+    }
+    .product_photo{
+        width: 265px;
+        height: 265px;
+    }
+    .product_card .p_shadow1{
+        width: 160px; 
+        bottom: 38px;
+        right: 11px;
+    }
+    .section4 .section4_text_header{
+        margin-top: 112px;
+    }
+    .section4_texts{
+        margin-bottom: 112px;
+        gap: 60px;
+    }
+    .section4_text{
+        width: 432px;
+    }
+    .section5{
+        height: 504px;
+    }
+    .section5 .text{
+        width: 368px;
+        margin-left: 48px;
+    }
+    .slider-wrapper{
+        margin-right: 48px;
+    }
+    .button-container{
+        margin-bottom: 24px;
+    }
+    .section6{
+        margin-top: 112px;
+        width: 100%;
+    }
+    .section6_cards .card{
+        width: 624px;
+        height: 400px;  
+        margin-top: 64px; 
+    }
+    .section6_cards .card img{
+        width: 100%;
+    }
+    .section6_cards .cardd{
+        width: 296px;
+        height: 400px; 
+        margin-top: 64px; 
+    }
+    .section6_cards .cardd img{
+        width: 100%;
+    }
+    .section6_cards .cardd .img{
+        width: 272px;
+        height: 272px;
+    }
+    .section6_cards .carddd .img{
+        width: 436px;
+        height: 272px;
+    }
+    .section6_cards .card .img{
+        width: 600px;
+        height: 272px;
+    }
+    .section6_cards{
+        gap: 32px;
+    }
+    .section6_cards .carddd{
+        margin-top: 64px;
+        width: 436px;
+        height: 400px;
+    }
+    .section6_cards .carddd img{
+        width: 100%;
+    }
+    .section6_cards .text{
+        width: 600px;
+    }
+    .section6_cards{
+        width: 103%;
+    }
+    .section6_cards .text h3{
+        font-size: 24px;
+    }
+    .section6_cards .text a{
+        padding: 8px 16px;
+    }
+    #textt{
+        width: 272px;
+    }
+}
